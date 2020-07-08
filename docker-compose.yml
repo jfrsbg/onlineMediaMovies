@@ -9,7 +9,7 @@ services:
       - NODE_ENV=production
     volumes:
       - ./:/home/react
-    command: "npm start"
+    command: bash -c "npm install && npm start"
     ports:
       #HOST:CONTAINER - HOST = maquina local
       - "3001:3000"
